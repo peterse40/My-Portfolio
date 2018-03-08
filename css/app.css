@@ -1,0 +1,97 @@
+body {
+	background-color: #fcfcfc;
+	font-family: 'Nunito', sans-serif;
+	margin: 3rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-family: "Montserrat", Helvetica, Roboto, Arial, sans-serif;
+	font-weight: 600;
+}
+
+.header-nav {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.header-nav img {
+	margin-bottom: 1rem;
+}
+
+.header-nav-subtitle {
+	font-size: 1rem;
+	letter-spacing: .05rem;
+}
+
+.header-nav-link {
+	text-transform: uppercase;
+	font-weight: 600;
+	color:#000;
+	letter-spacing: .05rem;
+}
+
+.header-nav-link:hover{
+	color: #BB7676;
+}
+
+.is-active {
+	color: #7b183e;
+}
+
+.content {
+	margin: 2rem 0;
+	
+}
+
+.content img {
+	margin: 1rem;
+}
+
+.portfolio {
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	
+}
+
+.about-pic {
+	margin-bottom: 1rem;
+	margin: 1rem;
+    float: left;
+    margin-top: .01rem;
+    padding-right: 10px;
+}
+
+.contact-form-field {
+	border-radius: .2rem;
+	border-color: #ccc;
+	box-shadow: none;
+	background-color: #fcfcfc;
+}
+
+.contact-form-field:focus {
+	background-color: #fff;
+	border-color: #ccc;
+	box-shadow: none;
+	
+}
+
+.contact-submit {
+	padding: .7rem 2rem;
+	background-color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;	
+}
+
+.contact-submit:hover {
+	background-color: #000;
+	opacity: .8;
+}
+
+.contact_content {
+    float: right;
+	width: 600px;
+	margin: 3rem;
+}
