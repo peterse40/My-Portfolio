@@ -91,7 +91,27 @@ h1 {
 }
 
 .contact_content {
-    float: right;
-	width: 600px;
-	margin: 3rem;
+    float: left;
+    width: 800px;
+    margin-left: 8rem;
+}
+
+.float__left {
+	width: 430px;
+	float: left;
+	margin: 2rem;
+
+}
+
+.float__left2 {
+	width: 430px;
+	float: left;
+	margin: 2rem;
+	
+}
+
+.float__right {
+	width: 430px;
+	float: left;
+	margin: 2rem;
 }
