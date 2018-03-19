@@ -1,13 +1,31 @@
 <!doctype html>
+<!--[if IE 9]>
 <html class="no-js" lang="en" dir="ltr">
+<![endif] -->
+<html class="no-js" lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elizabeth Peters Portfolio Site</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="http://epeterswebdesign.com//favicon.png">
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115873786-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-115873786-1');
+		</script>
+
   </head>
   <body>
 
@@ -17,7 +35,7 @@
       <div class="column">
 		  <div class="header-nav">
 			<img src="images/Personal_logo.png" alt="Logo" width="100">
-			  <p class="header-nav-subtitle">Designer and Developer</p>
+			  <h1 class="header-nav-subtitle">Designer and Developer</h1>
 			  <div class="menu-centered">
 			    <ul class="menu">
 					<li><a href="index.html" class="header-nav-link">Portfolio</a></li>
@@ -31,48 +49,84 @@
     
 	  							 <!-- Content -->
 	  
-	  <div class="row">
-		<div class="small-12 medium-6 column">
-			<h1>Contact Me</h1>
-			<p>Want to connect? Please send me a message here and I will get back to you shortly.</p>
-			<p>- Elizabeth</p>		
-		</div>  
-	  
-	  <div class="row">
-	   <div class="contact_content">
-		<div class="small-12 medium-6 column">
-		  <form action="mail.php" method="POST">
-			<p>First Name</p> <input type="text" First Name="name" class="contact-form-field" required>
-			  <p>Last Name</p> <input type="text" Last Name="name" class="contact-form-field" required>
-			  <p>Email</p> <input type="text" name="email" class="contact-form-field" required>
-				<p>Phone</p> <input type="text" name="phone" class="contact-form-field" required>
-				  <p>Message</p><textarea name="message" required rows="10" cols="10" class="contact-form-field"></textarea>   
-				<input type="submit" value="Submit" class="button contact-submit">
-			 </form>
-		</div>  
-	  </div>	  
-   	</div>
-   
-    <hr>					
+	  <section class="row">
+	   <div class="wrap row">
+		<div class="small-12 medium-4 column">
+			<h1>Contact Us</h1>
+			<p>Want to connect? Please send me a message here and I will get back to you shortly.
+			
+			- Elizabeth
+			<a href="#">info@epeterswebdesign.com</a></p>	
+		  
+	           <form action="mail.php" method="POST">
+			  	<p>
+	               <label for="First Name">First Name</label> 
+				   <input type="text" id="first name" required class="contact-form-field">
+				</p>
+				<p> 
+	               <label for="Last Name">Last Name</label> 
+				   <input type="text" id="Last name" required class="contact-form-field">
+				</p>
+				<p> 
+				  <label for="email">Email</label>
+			      <input type="text" id="email" required class="contact-form-field">
+				</p>
+				<p>
+				  <label for="subject">Subject</label>
+			      <input type="text" id="subject" required class="contact-form-field">
+				</p>
+				<p> 
+				  <label for="comment">Comment</label>
+			      <textarea name="comment" id="comment" cols="30" rows="5" required class="contact-form-field">
+					 </textarea>
+			 	</p>
+			 	<p>
+			  	 <input type="submit" value="Submit" class="button contact-submit">
+				</p>
+			</form>
+            </div>
+		  </div>
+		 </div>
+      </section>
+	
 	  				<!-- Footer -->
-	  
+	  <hr>
       <div class="row">
 		  <div class="column menu-centered">
 		  	<ul class="menu">
-				<li><a href="https://www.facebook.com/peterse20"><img src="images/if_Facebook_194929.png" width="30" alt="Facebook"></a></li> 
-				<li><a href="https://twitter.com/elizabeth_peter"><img src="images/if_Twitter_194909.png" width="30" alt="Twitter"></a></li> 
-				<li><a href="https://github.com/peterse40"><img src="images/if_icon-social-github-outline_211903.png" width="30" alt="Github"></a></li>
-				<li><a href="https://www.behance.net/nishimwe1"><img src="images/if_Behance_Rounded.png" width="30" alt="Behance"></a></li>
-				<li><a href="https://www.linkedin.com/in/elizabethpeter/"><img src="images/if_LinkedIn_194920.png" width="30" alt="Linkedin"></a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="https://www.facebook.com/peterse20"><img src="images/if_Facebook_194929.png" width="30" alt="Facebook" class="footer-menu-link"></a></li> 
+				<li><a href="https://twitter.com/elizabeth_peter"><img src="images/if_Twitter_194909.png" width="30" alt="Twitter" class="footer-menu-link"></a></li> 
+				<li><a href="https://github.com/peterse40"><img src="images/if_icon-social-github-outline_211903.png" width="30" alt="Github" class="footer-menu-link"></a></li>
+				<li><a href="https://www.behance.net/nishimwe1"><img src="images/if_Behance_Rounded.png" width="30" alt="Behance" class="footer-menu-link"></a></li>
+				<li><a href="https://www.linkedin.com/in/elizabethpeter/"><img src="images/if_LinkedIn_194920.png" width="30" alt="Linkedin" class="footer-menu-link"></a></li>
+				<li><a href="index.html" class="footer-menu-link">Portfolio</a></li>
+				<li><a href="about.html" class="footer-menu-link">About</a></li>
+				<li><a href="contact.html" class="footer-menu-link is-active">Contact Us</a></li>
 			</ul>  
 		  </div>	  
        </div>
 	  
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+	   <script src="js/vendor/jquery.js"></script>
+	    <script src="js/vendor/what-input.js"></script>
+	    <script src="js/vendor/foundation.js"></script>
+	    <script src="js/custom.modernizr.js"></script>
+	    <script src="js/global.js"></script>
+	    <script src="js/vendor/foundation.min.js"></script>
+	    <script src="js/app.js"></script>
+  
+      <script>
+      $(document).foundation();
+      </script>
+  
+		   <script>
+		      $('#myForm')
+		        .on('invalid', function () {
+		          var invalid_fields = $(this).find('[data-invalid]');
+		          console.log(invalid_fields);
+		        })
+		        .on('valid', function () {
+		          console.log('valid!');
+		        });   
+		    </script>
   </body>
 </html>

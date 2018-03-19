@@ -1,7 +1,15 @@
+
+/* CSS Content 
+==============================================*/
+
+
+
 body {
 	background-color: #fcfcfc;
 	font-family: 'Nunito', sans-serif;
-	margin: 3rem;
+	margin: 10rem;
+
+
 }
 
 h1 {
@@ -9,6 +17,19 @@ h1 {
 	font-family: "Montserrat", Helvetica, Roboto, Arial, sans-serif;
 	font-weight: 600;
 }
+
+hr {
+	max-width: 100%;
+}
+
+p {
+	font-size: 1rem;
+	max-width: 500px;
+}
+
+
+/* Header 
+===============================================*/
 
 .header-nav {
 	text-align: center;
@@ -39,6 +60,13 @@ h1 {
 	color: #7b183e;
 }
 
+.welcome h1{
+	font-size: 40px;
+}
+
+/* Content CSS 
+==============================================*/
+
 .content {
 	margin: 2rem 0;
 	
@@ -49,11 +77,15 @@ h1 {
 }
 
 .portfolio {
-	text-align: center;
+	text-align: left;
 	font-weight: 600;
 	margin-bottom: 2rem;
 	margin-top: 1rem;
 	
+}
+
+.portfolio_logos {
+	margin-right: 10px;
 }
 
 .about-pic {
@@ -69,6 +101,9 @@ h1 {
 	border-color: #ccc;
 	box-shadow: none;
 	background-color: #fcfcfc;
+	max-width: 800px;
+	min-width: 350px;
+
 }
 
 .contact-form-field:focus {
@@ -91,10 +126,26 @@ h1 {
 }
 
 .contact_content {
-    float: left;
+    float: center;
     width: 800px;
     margin-left: 8rem;
 }
+
+a:hover {
+	color: #BB7676;
+}
+
+.portfolio_logos a {
+	display: inline-block;
+	margin: 2rem;
+}
+
+.figcaption_nashville {
+	margin-left: 20px;
+}
+
+/* Float Divs 
+================================================*/
 
 .float__left {
 	width: 430px;
@@ -115,3 +166,84 @@ h1 {
 	float: left;
 	margin: 2rem;
 }
+
+.float__left_contact {
+	width: 430px;
+	float: left;
+	margin: 2rem;
+	padding-left: 20px;
+}
+
+.float__right_contact {
+	width: 450px;
+	float: left;
+	margin: 2rem;
+	padding-left: 30px;
+}
+
+.para_profile {
+	float: left;
+	margin-top: 10px;
+}
+
+.profile_image {
+	width: 393px;
+    float: left;
+    margin-top: -50px;
+}
+/* Footer
+=================================================*/
+
+.footer-menu-link {
+	text-transform: uppercase;
+	font-weight: 600;
+	color:#000;
+	letter-spacing: .05rem;
+}
+
+.footer_menu-link:hover {
+	color: #BB7676;
+}
+
+.footer_menu:hover {
+	color: #BB7676;
+}
+
+.is-active {
+	color: #7b183e;
+}
+
+/* MEDIA QUERY
+================================================== */
+
+@media (max-width: 43px) {
+	.content {
+		margin-right: 450px;
+		margin-top: 5px;
+	}
+	
+	.header-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 875px) {
+	
+	h1 {
+		width: 100%;
+	}
+	.wrap p {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 476px) {
+	.wrap {
+		width: 100%;
+	}
+	.inline-list{
+		margin-top: 5px;
+	}
+
+}
+
+
